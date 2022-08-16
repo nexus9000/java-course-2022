@@ -54,7 +54,8 @@ public class CalculatorTools {
             }//end switch
              System.out.printf("%s %d %n", "result of operation is:", result);
             }catch(InputMismatchException ime){
-
+                System.err.println("You didn't enter a number");
+                System.exit(0x57);
             }
         }//end while
     }

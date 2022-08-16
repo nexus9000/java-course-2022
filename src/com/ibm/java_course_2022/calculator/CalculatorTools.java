@@ -56,6 +56,7 @@ public class CalculatorTools {
             }catch(InputMismatchException ime){
                 System.err.println("You didn't enter a number");
                 System.exit(0x57);
+                //test
             }
         }//end while
     }

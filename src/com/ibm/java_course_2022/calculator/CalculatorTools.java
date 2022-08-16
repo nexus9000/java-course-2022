@@ -57,6 +57,7 @@ public class CalculatorTools {
                 System.err.println("You didn't enter a number");
                 System.exit(0x57);
                 //test comment
+                //test comment2
             }
         }//end while
     }

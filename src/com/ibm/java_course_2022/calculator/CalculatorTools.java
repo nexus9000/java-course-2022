@@ -12,11 +12,14 @@ public class CalculatorTools {
         this.calculator = calculator;
     }
     public void runCalculator(){
-        Scanner sc = new Scanner(System.in);
-        doLogic(sc, calculator);
+
+        doLogic(calculator);
     }
 
-    private void doLogic(@NotNull Scanner sc, Calculator calculator){
+    private void doLogic(Calculator calculator){
+        Number operand1, operand2;
+        Scanner sc = new Scanner(System.in);
+
         while(true) {
             System.out.println("Choose math operation[type 1 or 2,...] or type [9 for exit]");
             System.out.println("1.Multiply" +"\n" +"2.Divide" +
@@ -28,11 +31,11 @@ public class CalculatorTools {
                     return;
                 }
                 System.out.println("Enter a first operand!");
-                int operand1 = sc.nextInt();
+                 operand1 = readInput(sc);
                 System.out.println("Enter a second operand!");
-                int operand2 = sc.nextInt();
+                operand2 = readInput(sc);
 
-            long result  = 0L;
+            Number result  = 0L;
             switch (choice) {
                 case 1: {
                     result = calculator.doMultiply(operand1, operand2);
@@ -52,14 +55,26 @@ public class CalculatorTools {
                     System.out.println("Undefined operation");
                 }
             }//end switch
-             System.out.printf("%s %d %n", "result of operation is:", result);
+             //System.out.printf("%s %d %n", "result of operation is:", result);
+             System.out.println("result of operation is: "+result);
             }catch(InputMismatchException ime){
                 System.err.println("You didn't enter a number");
-                System.exit(0x57);
-                //test
-                //test2
+                sc = new Scanner(System.in);
+                //System.exit(0x57);
+
             }
         }//end while
     }
+
+    private Number readInput(@NotNull Scanner sc){
+        try {
+            long result = sc.nextLong();
+            return result;
+        }catch (InputMismatchException ime){
+            double result = sc.nextDouble();
+            return result;
+        }
+    }
+
 
 }

@@ -10,7 +10,14 @@ public class Calculator {
 
     //OOP - overloading (static polymorphism)
     public Number doSum(Number operand1, Number operand2) {
-        if (operand1 instanceof Long && operand2 instanceof Long) {
+
+        if(operand1 instanceof Double){
+            return operand1.doubleValue() + operand2.doubleValue();
+        }
+        else if(operand2 instanceof Double){
+            return operand1.doubleValue() + operand2.doubleValue();
+        }
+       else if (operand1 instanceof Long && operand2 instanceof Long) {
             return operand1.longValue() + operand2.longValue();
         } else if (operand1 instanceof Double && operand2 instanceof Double) {
             return operand1.doubleValue() + operand2.doubleValue();
@@ -18,6 +25,8 @@ public class Calculator {
         throw new RuntimeException("NaN");
 
     }
+
+
 
     /**
      * @param operand1

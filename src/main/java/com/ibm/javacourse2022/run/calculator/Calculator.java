@@ -1,6 +1,6 @@
 package com.ibm.javacourse2022.run.calculator;
 
-public class Calculator {
+public class Calculator implements CalculatorInterface {
     /**
      * @param operand1
      * @param operand2
@@ -9,6 +9,7 @@ public class Calculator {
 
 
     //OOP - overloading (static polymorphism)
+    @Override
     public Number doSum(Number operand1, Number operand2) {
 
         if(operand1 instanceof Double){
@@ -33,6 +34,7 @@ public class Calculator {
      * @param operand2
      * @return
      */
+    @Override
     public Number doMinus(Number operand1, Number operand2) {
         if (operand1 instanceof Long && operand2 instanceof Long) {
             return operand1.longValue() - operand2.longValue();
@@ -48,6 +50,7 @@ public class Calculator {
      * @param operand2
      * @return operand1/operand2
      */
+    @Override
     public Number doDivide(Number operand1, Number operand2) {
         if (operand1 instanceof Long && operand2 instanceof Long) {
             return operand1.longValue() / operand2.longValue();
@@ -63,6 +66,7 @@ public class Calculator {
      * @param operand2
      * @return operand1*operand2
      */
+    @Override
     public Number doMultiply(Number operand1, Number operand2) {
         if (operand1 instanceof Long && operand2 instanceof Long) {
             return operand1.longValue() * operand2.longValue();

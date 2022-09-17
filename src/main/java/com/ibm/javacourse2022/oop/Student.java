@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Map;
 
-public final class Student extends Person implements Comparable<Student> {
+public final class Student<T> extends Person implements Comparable<Student> {
     private  String name;
     private  long facNum;
     private  String lastName;

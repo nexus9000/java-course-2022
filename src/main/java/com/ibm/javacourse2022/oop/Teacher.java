@@ -2,7 +2,7 @@ package com.ibm.javacourse2022.oop;
 
 import java.io.Serializable;
 
-public class Teacher extends Person implements Faculty, Comparable<Teacher>, Serializable {
+public class Teacher<T> extends Person implements Faculty, Comparable<Teacher>, Serializable {
     private  String name;
     private  String lastName;
     private  int age;

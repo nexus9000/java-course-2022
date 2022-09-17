@@ -1,6 +1,6 @@
 package com.ibm.javacourse2022.oop;
 
-public class Administrators extends Person<Teacher>{
+public class Administrators<T> extends Person{
     @Override
     public String getName() {
         return null;

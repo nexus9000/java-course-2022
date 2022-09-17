@@ -6,5 +6,6 @@ public class RunPerson {
         Person<Teacher> teacher = pf.getPerson("teacher".toUpperCase());
         Person<Student> student = pf.getPerson("student".toUpperCase());
         Person<Administrators> administrators = pf.getPerson("administrators".toUpperCase());
+        System.out.println(teacher.lastName);
     }
 }

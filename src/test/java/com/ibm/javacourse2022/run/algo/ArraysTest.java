@@ -48,6 +48,7 @@ static final long SEED = 123l;
         Integer[] sorted =   sortInsertion(arrays);
         System.out.println("After sorting");
         iterateArrays(sorted);
+        assertEquals(7, arrays.length);
     }
     //Generics method
     <E>void iterateArrays(E[] values){

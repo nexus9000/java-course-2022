@@ -8,17 +8,31 @@ import java.util.InputMismatchException;
 import java.util.Scanner;
 
 public class CalculatorTools {
-    Calculator calculator;
+    CalculatorImpl calculator;
     //constructor DI
-    public CalculatorTools(Calculator calculator){
+    public CalculatorTools(CalculatorImpl calculator){
         this.calculator = calculator;
+    }
+
+    @Override
+    public int hashCode() {
+        return 0x32;
+    }
+
+    @Override
+    public String toString() {
+        return super.toString();
+    }
+
+    public CalculatorTools(){
+
     }
     public void runCalculator(){
 
         doLogic(calculator);
     }
 
-    private void doLogic(Calculator calculator){
+    private void doLogic(CalculatorImpl calculator){
         Number operand1, operand2;
         Scanner sc = new Scanner(System.in);
 
@@ -63,7 +77,7 @@ public class CalculatorTools {
             }catch(InputMismatchException ime){
                 System.err.println("You didn't enter a number");
                 sc = new Scanner(System.in);
-                //System.exit(0x57);
+                System.exit(0x57);
 
             }
         }//end while

@@ -1,6 +1,6 @@
 package com.ibm.javacourse2022.run.calculator;
 
-public class Calculator implements CalculatorInterface {
+public class CalculatorImpl implements CalculatorInterface {
     /**
      * @param operand1
      * @param operand2

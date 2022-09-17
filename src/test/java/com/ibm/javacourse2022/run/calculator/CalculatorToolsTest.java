@@ -10,7 +10,7 @@ import static org.junit.jupiter.api.Assertions.*;
 class CalculatorToolsTest {
 Scanner sc;
 CalculatorTools ct;
-Calculator calculator;
+CalculatorImpl calculator;
     @BeforeEach
     void setUp() {
         sc = new Scanner(System.in);

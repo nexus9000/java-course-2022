@@ -4,7 +4,7 @@ import com.ibm.javacourse2022.run.calculator.CalculatorTools;
 import org.apache.log4j.Logger;
 
 public class RunApp {
-    final static Logger logger = Logger.getLogger(RunApp.class);
+    static final Logger logger = Logger.getLogger(RunApp.class);
     public static void main(String...arg){
          CalculatorTools ct = new CalculatorTools();
          logger.info("Calculator was started");

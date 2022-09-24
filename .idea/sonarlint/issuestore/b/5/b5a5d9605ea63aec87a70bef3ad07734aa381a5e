@@ -1,0 +1,27 @@
+
+J
+java:S3740"/Provide the parametrized type for this generic.(òÃ‹Šüÿÿÿÿ
+J
+java:S3740"/Provide the parametrized type for this generic.(òÃ‹Šüÿÿÿÿ
+‡
+java:S1319"lThe type of "listSubjects" should be an interface such as "List" rather than the implementation "ArrayList".(˜ËˆÅøÿÿÿÿ
+‚
+java:S1319"mThe return type of this method should be an interface such as "Map" rather than the implementation "HashMap".(Ü°=
+‹
+java:S1319"pThe return type of this method should be an interface such as "List" rather than the implementation "ArrayList".(‘–û—øÿÿÿÿ
+~
+java:S1319("cThe type of "grades" should be an interface such as "Map" rather than the implementation "HashMap".(Âä•«şÿÿÿÿ
+@
+java:S2387"*"name" is the name of a field in "Person".(Ë¥¼
+I
+java:S2387
+"."lastName" is the name of a field in "Person".(ºàÑïúÿÿÿÿ
+D
+java:S2387")"age" is the name of a field in "Person".(Æ†´¦şÿÿÿÿ
+t
+java:S1210a"YOverride "equals(Object obj)" to comply with the contract of the "compareTo(T o)" method.(ÁÇ§¬ùÿÿÿÿ
+6
+java:S2326"T is not used in the class.(òÃ‹Šüÿÿÿÿ
+[
+java:S1612-"@Replace this lambda with method reference 'System.out::println'.(üĞÍİúÿÿÿÿ
+S	java:S106-"9Replace this use of System.out or System.err by a logger.(üĞÍİúÿÿÿÿ

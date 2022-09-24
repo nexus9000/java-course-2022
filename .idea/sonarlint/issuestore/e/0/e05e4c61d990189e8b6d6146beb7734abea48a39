@@ -1,0 +1,25 @@
+
+E
+java:S3740"/Provide the parametrized type for this generic.( êŸÖ
+L
+java:S3740"/Provide the parametrized type for this generic.( êŸÖ8³üñÚ´0
+G
+java:S2387"*"name" is the name of a field in "Person".(Ë¥¼8ÈüñÚ´0
+P
+java:S2387"."lastName" is the name of a field in "Person".(ºàÑïúÿÿÿÿ8ËüñÚ´0
+K
+java:S2387")"age" is the name of a field in "Person".(Æ†´¦şÿÿÿÿ8ÌüñÚ´0
+œ
+java:S1186#"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(ØæÏùÿÿÿÿ
+o
+java:S1210("YOverride "equals(Object obj)" to comply with the contract of the "compareTo(T o)" method.(¯¦çÔ
+1
+java:S2326"T is not used in the class.( êŸÖ
+L
+java:S1172"/Remove this unused method parameter "lastName".(ê³‘Ø8ÖüñÚ´0
+>
+java:S1068"(Remove this unused "name" private field.(Ë¥¼
+G
+java:S1068",Remove this unused "lastName" private field.(ºàÑïúÿÿÿÿ
+B
+java:S1068"'Remove this unused "age" private field.(Æ†´¦şÿÿÿÿ
